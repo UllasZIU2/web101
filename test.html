@@ -1,45 +1,36 @@
-git add .<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support Chatbot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p style="color: rgb(70, 7, 67) ; background-color: yellow; font-size: 40px; font-family: 'Courier New', Courier, monospace;">hello Let’s make a table with 3 rows and 3 columns.</p>
 
-        <p><iframe src="" frameborder="0"></iframe></p>
-        <table border="2", width="500" height="200">
- <tr align="center">
-    <th>name </th>
-    <th>intake</th>
-    <th>cg</th>
-    <th>id</th>
- </tr>
- <tr align="center">
-    <td>md zihad</td>
-    <td>summer </td>
-    <td>-2</td>
-    <td>22301746</td>
- </tr>
-    </table>
-<label>Gender:</label><br>
-<input type="radio" name="gender"> Male <br>
-<input type="radio" name="gender"> Female <br>
-<input type="radio" name="gender"> Other <br>
-<input type="submit" value="Send Form">
-    <br>
-<label for="religion">Religion:</label>
-<select id="religion" name="religion">
-  <option value="">--Select Religion--</option>
-  <option value="islam">Islam</option>
-  <option value="hinduism">Hinduism</option>
-  <option value="christianity">Christianity</option>
-  <option value="buddhism">Buddhism</option>
-  <option value="others">Others</option>
-</select> 
-<br>
-<label for="message">Additional Information:</label>
-<textarea id="message" name="message" rows="4"></textarea>
+<div class="chatbot-wrapper">
+  <input type="checkbox" id="chatbot-toggle" hidden>
+  
+  <label for="chatbot-toggle" class="chatbot-button">💬</label> <!-- This is the clickable button -->
+
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      Welcome To Customer Support
+      <label for="chatbot-toggle" class="close-btn">&times;</label> <!-- Close button -->
+    </div>
+    <div class="chatbot-body">
+      <input type="text" class="chat-input" placeholder="Enter your name">
+      <div class="phone-input-container">
+        <select class="country-code">
+          <option value="+880">+880</option>
+        </select>
+        <input type="text" class="chat-input phone-input" placeholder="Enter your mobile number">
+      </div>
+      <textarea class="chat-textarea" placeholder="Write your query here"></textarea>
+      <button class="send-btn">&#10148;</button>
+    </div>
+  </div>
+</div>
+
 </body>
-</html
+</html>

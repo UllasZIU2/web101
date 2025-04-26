@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+  }
+  
+  .chatbot-wrapper {
+    position: fixed;
+    top: 20px; /* instead of bottom */
+    right: 20px;
+  }
+  
+  #chatbot-toggle {
+    display: none;
+  }
+  
+  /* Chatbot Button */
+  .chatbot-button {
+    width: 60px;
+    height: 60px;
+    background-color: #1d308c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  /* Chatbot Box */
+  .chatbot-container {
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid #044b98;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  
+  /* Show chatbot when checkbox is checked */
+  #chatbot-toggle:checked ~ .chatbot-container {
+    display: flex;
+  }
+  
+  /* Chatbot Header */
+  .chatbot-header {
+    background-color: #1d308c;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Close Button (acts like label) */
+  .close-btn {
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /* Chatbot Body */
+  .chatbot-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .chat-input, .chat-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .phone-input-container {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .country-code {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .phone-input {
+    flex: 1;
+  }
+  
+  .chat-textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  .send-btn {
+    background-color: #1d308c;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .send-btn:hover {
+    background-color: #2566a6;
+  }
+  
